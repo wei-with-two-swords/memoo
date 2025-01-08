@@ -5,7 +5,11 @@
     <meta charset="<?php $this->options->charset(); ?>">
     <meta name="renderer" content="webkit">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="shortcut icon" href="/usr/themes/memoo/favicon.ico" type="image/x-icon" />
+    <?php if($this->options->icoPath):  ?>
+        <link rel="shortcut icon" href="<?php $this->options->icoPath(); ?>" type="image/x-icon" />
+    <?php else: ?>
+        <link rel="shortcut icon" href="/usr/themes/memoo/favicon.ico" type="image/x-icon" />
+    <?php endif ?>
     <title><?php $this->archiveTitle([
             'category' => _t('分类 %s 下的文章'),
             'search'   => _t('包含关键字 %s 的文章'),
@@ -21,6 +25,9 @@
 
     <!-- 通过自有函数输出HTML头部信息 -->
     <?php $this->header(); ?>
+
+    <!-- 站点统计代码放置位置 -->
+    <?php $this->options->statsCode();?>
 </head>
 <body>
 

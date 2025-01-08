@@ -24,10 +24,27 @@ function themeConfig($form)
         _t('站点sitemap.xml地址'),
         _t('请输入站点的sitemap.xml地址，该地址将显示在页面超链接中，示例：https://www.xx.com/index.php/sitemap.xml')
     );
+    $icoPath = new \Typecho\Widget\Helper\Form\Element\Text(
+        'icoPath',
+        null,
+        null,
+        _t('站点favicon.ico图标文件位置'),
+        _t('请输入favicon.ico图标文件位置，这将让图标展示在浏览器页签上，示例（默认值）：/usr/themes/memoo/favicon.ico')
+    );
+    $statsCode = new \Typecho\Widget\Helper\Form\Element\Textarea(
+        'statsCode',
+        null,
+        null,
+        _t('站点统计代码'),
+        _t('此处内容将直接输出到页面的头部的header标签尾部，务必谨慎操作，需要带script标签')
+    );
+
 
     $form->addInput($logoUrl);
     $form->addInput($icp);
     $form->addInput($sitemapUrl);
+    $form->addInput($icoPath);
+    $form->addInput($statsCode);
 
     $sidebarBlock = new \Typecho\Widget\Helper\Form\Element\Checkbox(
         'sidebarBlock',
