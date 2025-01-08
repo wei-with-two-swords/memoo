@@ -21,6 +21,9 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
         .theme-cover-img:hover{
             transform: scale(1.05);
         }
+        .theme-desc{
+            line-height: 1.8;
+        }
     </style>
     <script>
         (function(){
@@ -29,7 +32,17 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
                 const list_items =themes_list.querySelectorAll('li');
                 let html_str = ""
                 for(let i=0;i<list_items.length-3;i+=4){
-                    html_str += `<div class="col py-3 pe-3"><div> <a href="${list_items[i+2].innerText}" title="点击预览"><img class="theme-cover-img" src="${list_items[i].innerText}" alt="${list_items[i+1].innerText}"/></a> ${list_items[i+1].innerText} <br/> <a href="${list_items[i+3].innerText}">下载地址</a></div> </div>`;
+                    html_str += `<div class="col py-3 pe-3 ">
+                                    <div>
+                                        <a href="${list_items[i+2].innerText}" title="点击预览">
+                                            <img class="theme-cover-img" src="${list_items[i].innerText}" alt="${list_items[i+1].innerText}"/>
+                                        </a> 
+                                        <div class="pt-1 theme-desc"> 
+                                            <a href="${list_items[i+3].innerText}">下载地址</a> &nbsp;
+                                            ${list_items[i+1].innerText}
+                                        </div>
+                                    </div> 
+                                </div>`;
                 }
                 
                 themes_list.parentNode.innerHTML = html_str;
