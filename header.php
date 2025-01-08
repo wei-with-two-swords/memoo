@@ -32,7 +32,7 @@
 <body>
 
 <header id="header" class="clearfix">
-    <div class="container">
+    <div class="container-md">
         <div class="row">
             <div class="site-name col-md-8 col-sm-12">
                 <?php if ($this->options->logoUrl): ?>
@@ -67,7 +67,7 @@
     </div>
 </header><!-- end #header -->
 <div id="body">
-    <div class="container">
+    <div class="container-md">
         <div class="row">
 
     
