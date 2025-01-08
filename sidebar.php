@@ -48,14 +48,17 @@
                 <?php if ($this->user->hasLogin()): ?>
                     <li class="last"><a href="<?php $this->options->adminUrl(); ?>"><?php _e('进入后台'); ?>
                             (<?php $this->user->screenName(); ?>)</a></li>
-                    <li><a href="<?php $this->options->logoutUrl(); ?>"><?php _e('退出'); ?></a></li>
+                    <li><a href="<?php $this->options->logoutUrl(); ?>"><?php _e('退出登录'); ?></a></li>
                 <?php else: ?>
-                    <li class="last"><a href="<?php $this->options->adminUrl('login.php'); ?>"><?php _e('登录'); ?></a>
+                    <li class="last"><a href="<?php $this->options->adminUrl('login.php'); ?>"><?php _e('账号登录'); ?></a>
                     </li>
                 <?php endif; ?>
-                <li><a href="<?php $this->options->feedUrl(); ?>"><?php _e('文章 RSS'); ?></a></li>
-                <li><a href="<?php $this->options->commentsFeedUrl(); ?>"><?php _e('评论 RSS'); ?></a></li>
-                <li><a href="https://typecho.org">Typecho</a></li>
+                <li><a href="<?php $this->options->feedUrl(); ?>"><?php _e('文章RSS'); ?></a></li>
+                <li><a href="<?php $this->options->commentsFeedUrl(); ?>"><?php _e('评论RSS'); ?></a></li>
+                <?php if($this->options->sitemapUrl): ?>
+                    <li><a href="<?php $this->options->sitemapUrl();?>">Sitemap</a></li>
+                <?php endif; ?>
+                <!-- <li><a href="https://typecho.org">Typecho</a></li> -->
             </ul>
         </section>
     <?php endif; ?>

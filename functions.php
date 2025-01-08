@@ -10,16 +10,24 @@ function themeConfig($form)
         _t('站点 LOGO 地址'),
         _t('在这里填入一个图片 URL 地址, 以在网站标题前加上一个 LOGO')
     );
-    $ICP = new \Typecho\Widget\Helper\Form\Element\Text(
+    $icp = new \Typecho\Widget\Helper\Form\Element\Text(
         'ICP',
         null,
         null,
         _t('站点ICP备案号'),
-        _t('请输入您站点的ICP备案编号，该编号将显示在您站点的底部。')
+        _t('请输入站点的ICP备案编号，该编号将显示在您站点的底部，示例：京ICP备20210282xxx号')
+    );
+    $sitemapUrl = new \Typecho\Widget\Helper\Form\Element\Text(
+        'sitemapUrl',
+        null,
+        null,
+        _t('站点sitemap.xml地址'),
+        _t('请输入站点的sitemap.xml地址，该地址将显示在页面超链接中，示例：https://www.xx.com/index.php/sitemap.xml')
     );
 
     $form->addInput($logoUrl);
-    $form->addInput($ICP);
+    $form->addInput($icp);
+    $form->addInput($sitemapUrl);
 
     $sidebarBlock = new \Typecho\Widget\Helper\Form\Element\Checkbox(
         'sidebarBlock',
