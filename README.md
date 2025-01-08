@@ -1,4 +1,5 @@
 # Memoo
+[最近更新](https://www.memoo.online/index.php/theme.html) [演示站点](https://www.memoo.online/)
 ![屏幕截图](./screenshot.png)
 
 这是一个基于Typecho默认主题的微调版，保留了Typecho原汁原味的设计，同时有满足了当前大屏当道的现状。
