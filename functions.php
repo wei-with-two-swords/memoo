@@ -10,8 +10,16 @@ function themeConfig($form)
         _t('站点 LOGO 地址'),
         _t('在这里填入一个图片 URL 地址, 以在网站标题前加上一个 LOGO')
     );
+    $ICP = new \Typecho\Widget\Helper\Form\Element\Text(
+        'ICP',
+        null,
+        null,
+        _t('站点ICP备案号'),
+        _t('请输入您站点的ICP备案编号，该编号将显示在您站点的底部。')
+    );
 
     $form->addInput($logoUrl);
+    $form->addInput($ICP);
 
     $sidebarBlock = new \Typecho\Widget\Helper\Form\Element\Checkbox(
         'sidebarBlock',
