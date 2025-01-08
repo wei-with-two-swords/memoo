@@ -7,7 +7,7 @@
 <footer id="footer" role="contentinfo">
 
     &copy; <?php echo date('Y'); ?> <a href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title(); ?></a>.
-    <?php _e('Powered by<a href="https://typecho.org">Typecho</a>, themed by <a href="https://memoo.online">memoo</a>'); ?>.
+    <?php _e('Powered by <a href="https://typecho.org">Typecho</a>, themed by <a href="https://memoo.online">memoo</a>'); ?>.
     <br/>
     <a href="https://beian.miit.gov.cn/"><?php $this->options->ICP(); ?></a>
 
