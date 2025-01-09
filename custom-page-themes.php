@@ -35,7 +35,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
                     html_str += `<div class="col py-3 pe-3 ">
                                     <div>
                                         <a href="${list_items[i+2].innerText}" title="点击预览">
-                                            <img class="theme-cover-img" src="${list_items[i].innerText}" alt="${list_items[i+1].innerText}"/>
+                                            <img class="theme-cover-img" loading="lazy" src="${list_items[i].innerText}" alt="${list_items[i+1].innerText}"/>
                                         </a> 
                                         <div class="pt-1 theme-desc"> 
                                             <a href="${list_items[i+3].innerText}">下载地址</a> &nbsp;
