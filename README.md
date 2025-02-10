@@ -1,10 +1,23 @@
 # Memoo
-[最近更新](https://www.memoo.online/index.php/theme.html) [演示站点](https://www.memoo.online/)
+[最近更新](https://www.memoo.online/index.php/theme.html) | [演示站点](https://www.memoo.online/)
+
 ![屏幕截图](./screenshot.png)
 
 这是一个基于Typecho默认主题的微调版，保留了Typecho原汁原味的设计，同时有满足了当前大屏当道的现状。
 
 在Memoo中，基本上没有修改原主题的任何样式内容，仅仅是在页面布局和内容位置上做了些许更改。
+
+## 使用方法
+
+新手小白可以严格遵守以下步骤使用本主题：
+
+1. 下载本仓库主分支代码文件压缩文件
+2. 并上传至Typecho系统`/usr/themes/`目录下
+3. 解压代码文件，并将文件目录命名为`memoo`（注意，重命名文件夹很重要，否则可能会出错）
+4. 登录Typecho后台，启用`memoo`主题
+
+如果有任何使用上的问题，可以在此留言，或者前往 [演示站点](https://www.memoo.online/)与我交流。
+
 
 ## 主要改动
 
