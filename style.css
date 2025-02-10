@@ -554,3 +554,7 @@ img.alignright {
 .invisible {
   visibility: hidden;
 }
+
+.container-md {
+  width: auto !important;
+}
