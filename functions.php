@@ -38,6 +38,13 @@ function themeConfig($form)
         _t('站点统计代码'),
         _t('此处内容将直接输出到页面的头部的header标签尾部，务必谨慎操作，需要带script标签')
     );
+    $summaryNum = new \Typecho\Widget\Helper\Form\Element\Text(
+        'summaryNum',
+        null,
+        null,
+        _t('摘要字数'),
+        _t('输入一个数字（默认140），用于控制文章列表中摘要的字数')
+    );
 
 
     $form->addInput($logoUrl);
@@ -45,6 +52,7 @@ function themeConfig($form)
     $form->addInput($sitemapUrl);
     $form->addInput($icoPath);
     $form->addInput($statsCode);
+    $form->addInput($summaryNum);
 
     $sidebarBlock = new \Typecho\Widget\Helper\Form\Element\Checkbox(
         'sidebarBlock',

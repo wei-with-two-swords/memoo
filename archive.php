@@ -28,7 +28,13 @@
                     </li>
                 </ul>
                 <div class="post-content" itemprop="articleBody">
-                    <?php $this->content('- 阅读剩余部分 -'); ?>
+                    <!--<?php $this->content('- 阅读剩余部分 -'); ?>-->
+                    <?php if($this->options->summaryNum):  ?>
+                        <?php $this->excerpt($this->options->summaryNum, ''); ?>
+                    <?php else:?>
+                        <?php $this->excerpt(140, ''); ?>
+                    <?php endif; ?>
+                    <a itemprop="url" href="<?php $this->permalink() ?>"> More...</a>
                 </div>
             </article>
         <?php endwhile; ?>

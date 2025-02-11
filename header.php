@@ -44,7 +44,8 @@
                     <p class="description"><?php $this->options->description() ?></p>
                 <?php endif; ?>
             </div>
-            <div class="site-search col-md-4 d-none d-md-block">
+            <!--<div class="site-search col-md-4 d-none d-md-block">-->
+            <div class="site-search col-md-4 col-sm-12">
                 <form id="search" method="post" action="<?php $this->options->siteUrl(); ?>" role="search">
                     <label for="s" class="sr-only"><?php _e('搜索关键字'); ?></label>
                     <input type="text" id="s" name="s" class="text" placeholder="<?php _e('输入关键字搜索'); ?>"/>

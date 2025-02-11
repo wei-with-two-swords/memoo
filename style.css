@@ -122,7 +122,7 @@ textarea {
  * --------------- */
 
 #header {
-  padding-top: 35px;
+  padding-top: 1rem;
   border-bottom: 1px solid #EEE;
 }
 
@@ -143,7 +143,7 @@ textarea {
 
 /* Navigation menu */
 #nav-menu {
-  margin: 25px 0 0;
+  margin: 1rem 0 0;
   padding: 0;
 }
 
@@ -406,10 +406,12 @@ textarea {
  * Footer 
  * --------------- */
 #footer {
+  margin-top: 1rem;
   padding: 3em 0;
   line-height: 1.5;
   text-align: center;
   color: #999;
+  border-top: 1px solid #eee;
 }
 
 
@@ -443,6 +445,9 @@ textarea {
   max-width: 100%;
 }
 
+.post-content p img{
+    border: 1px solid #eee;
+}
 .post-content a img,
 .comment-content a img {
   background: #FFF;
