@@ -1,5 +1,5 @@
 # Memoo
-[最近更新](https://www.memoo.online/index.php/theme.html) | [演示站点](https://www.memoo.online/)
+[最近更新](https://memoo.online/pages/theme.html) | [演示站点](https://memoo.online/)
 
 ![屏幕截图](./screenshot.png)
 
