@@ -1,5 +1,4 @@
 # Memoo
-[最近更新](https://memoo.online/pages/theme.html) | [演示站点](https://memoo.online/)
 
 ![屏幕截图](./screenshot.png)
 
@@ -16,7 +15,7 @@
 3. 解压代码文件，并将文件目录命名为`memoo`（注意，重命名文件夹很重要，否则可能会出错）
 4. 登录Typecho后台，启用`memoo`主题
 
-如果有任何使用上的问题，可以在此留言，或者前往 [演示站点](https://www.memoo.online/)与我交流。
+如果有任何使用上的问题，可以在此留言与我交流。
 
 
 ## 主要改动
