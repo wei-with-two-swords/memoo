@@ -1,0 +1,50 @@
+baseURL = 'https://example.org/'
+languageCode = 'zh-cn'
+title = 'Memoo 教程站'
+theme = 'PaperMod'
+hasCJKLanguage = true
+
+[params]
+  description = "多套教程，系统学习"
+  author = "Wei"
+  ShowReadingTime = true
+  ShowWordCount = true
+  ShowCodeCopyButtons = true
+  ShowBreadCrumbs = true
+  ShowToc = true
+  ShowPostNavLinks = true
+  mainSections = ["posts", "django_blogs"]
+
+[params.homeInfoParams]
+  title = "Hi，我是 Wei 👋"
+  content = "欢迎来到教程站，这里记录了我的学习笔记和技术教程。"
+
+[[menu.main]]
+  name = "首页"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  name = "文章"
+  url = "/posts/"
+  weight = 2
+
+[[menu.main]]
+  name = "Django开发博客"
+  url = "/categories/django-%e5%8d%9a%e5%ae%a2%e5%bc%80%e5%8f%91/"
+  weight = 3
+
+[[menu.main]]
+  name = "归档"
+  url = "/archives/"
+  weight = 4
+
+[[menu.main]]
+  name = "标签"
+  url = "/tags/"
+  weight = 5
+
+[markup]
+  [markup.highlight]
+    style = "dracula"
+    noClasses = false
